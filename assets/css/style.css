@@ -1,20 +1,24 @@
 /* Variables */
 :root {
-    --menu-color: rgba(255, 255, 255, 0.415);
+    --menu-color: rgba(18, 17, 17, 0.742);
+    --menu-text: #fff;
     --background-color: #f0e7e7;
+    
 }
 /* Elements */
 body {
     overflow-x: hidden;
     background-color: var(--background-color);
+    /* text-align: center; */
 }
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
 }
 h2 {
     font-size: 5rem;
     text-align: center;
+    margin: 2rem;
 }
 h3 {
     font-size: 3.5rem;
@@ -34,17 +38,31 @@ img {
 
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    /* position: relative; */
+    justify-content: center;
+    align-items: center;
 }
 .portrait {
-    height: 75vh;
-    background-image: url(../images/Hunter-on-subway.jpg);
+    /* height: 75vh; */
+    overflow: hidden;
+    /* background-image: url(../images/Hunter-on-subway.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom; */
+}
+.portrait img {
+    height: 75vh;
+    object-position: top;
+    /* border-radius: 50%; */
 }
 .title {
     /* font-size: 2rem; */
     text-align: center;
+    display: flex;
+    /* position: absolute; */
+    width: 80%;
+    /* top: 50px; */
 }
 /* Navigation */
 
@@ -142,7 +160,7 @@ label ul {
 label a {
   margin-bottom: 1em;
   display: block;
-  color: #000;
+  color: var(--menu-text);
   font-size: 3rem;
   text-decoration: none;
   
@@ -219,9 +237,14 @@ li {
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
-    body {
-        /* background-color: red; */
-    }
+   /* Header */
+   header {
+       flex-direction: row;
+       flex-wrap: nowrap;
+   }
+   .title {
+       width: 50%;
+   }
 
     /* Modifications to nav */
     label ul {
@@ -236,19 +259,54 @@ li {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
     }
+    .menu {
+        transform: translate(400rem);
+        justify-content: space-evenly;
+    }
+
+    /* About me */
+
+
+}
+
+@media screen and (min-width: 922px) {
+    /* Elements */
+    h2 {
+        font-size: 2.5rem;
+    }
+    li {
+        font-size: 1rem;
+        border-bottom: none;
+        padding: 1rem 2rem;
+    }
 
     /* About me */
     #about-me {
-        display: flex;
-    }
-    .sec-img {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 75%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
     }
     .sec-img img {
-        border-radius: 50%;
-
+        height: 100%;
+        object-fit: cover;
     }
+  
+   #skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+    
+
+
+   /* Contact */
+
+   #contact ul{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+    
+   }
+   .contact-li {
+       font-size: 1.5rem;
+   }
 }
