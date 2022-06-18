@@ -28,7 +28,7 @@ h2 {
 }
 h3 {
     /* h3 purposes does not have title color because of cards */
-    font-size: 3.5rem;
+    font-size: 2rem;
     text-align: center;
     margin: 2rem;
     /* color: var(--title-color); */
@@ -181,6 +181,17 @@ label a:hover {
 .sec-img img {
     width: 100%;
 }
+/* Skills */
+.sec-desc h3 {
+    font-size: 3rem;
+    text-align: left;
+}
+.sec-desc ul {
+    margin: .5rem 2rem;
+}
+.skill-item {
+    font-size: 1.6rem;
+}
 
 /* Projects */
 #projects {
@@ -198,13 +209,15 @@ label a:hover {
     width: 45%;
     margin: .3rem;
     transition: all .2s ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 
 .work-card h3 {
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 .work-card p {
-font-size: 1.2rem;
+font-size: .7rem;
 }
 #primary {
     width: 92%;
@@ -231,7 +244,7 @@ font-size: 1.2rem;
 
 /* Footer */
 .contact-li {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 2rem;
     border-bottom: 1px solid #000;
 }
