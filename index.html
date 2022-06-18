@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- header -->
@@ -18,6 +22,21 @@
         </h1>
       </section>
     </header>
+    <section class="nav">
+      <nav>
+        <label>
+          <input type="checkbox" />
+          <span class="menu"> <span class="hamburger"></span> </span>
+          <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </label>
+      </nav>
+      <a href="#" class="icon" onclick=""></a>
+    </section>
     <!-- about me -->
     <section id="about-me">
       <article class="sec-img">
@@ -45,7 +64,7 @@
       </article>
     </section>
     <!-- Skills -->
-    <section id="about-me">
+    <section id="skills">
       <article class="sec-img">
         <img src="./assets/images/Laptop.jpg" alt="Hiking Gear along trail" />
       </article>
@@ -58,9 +77,10 @@
       </article>
     </section>
     <!-- Projects -->
+    <h2>Work</h2>
     <section id="projects">
-      <article class="work-card">
-        <div class="project-img">
+      <article id="primary" class="work-card">
+        <div class="primary-img">
           <!-- Filler Image for now -->
           <img src="./assets/images/Hiking.jpg" alt="" />
         </div>
@@ -68,7 +88,7 @@
           <h3>Project Title</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
-            dolores.
+            dolores. <a href="#">Click Here</a>
           </p>
         </div>
       </article>
@@ -81,7 +101,7 @@
           <h3>Project Title</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
-            dolores.
+            dolores. <a href="#">Click Here</a>
           </p>
         </div>
       </article>
@@ -94,7 +114,7 @@
           <h3>Project Title</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
-            dolores.
+            dolores. <a href="#">Click Here</a>
           </p>
         </div>
       </article>
@@ -107,11 +127,44 @@
           <h3>Project Title</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
-            dolores.
+            dolores. <a href="#">Click Here</a>
+          </p>
+        </div>
+      </article>
+      <article class="work-card">
+        <div class="project-img">
+          <!-- Filler Image for now -->
+          <img src="./assets/images/Hiking.jpg" alt="" />
+        </div>
+        <div class="project-desc">
+          <h3>Project Title</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            dolores. <a href="#">Click Here</a>
           </p>
         </div>
       </article>
     </section>
-    <section class="contact"></section>
+    <section id="contact">
+      <ul>
+        <li>Email: <a href="#">huntersteffner@gmail.com</a></li>
+        <li>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/matthew-hunter-steffner-84b56a113/"
+            class="fa fa-linkedin"
+            target="_blank"
+          ></a>
+        </li>
+        <li>
+          GitHub:
+          <a
+            href="https://github.com/huntersteffner"
+            target="_blank"
+            class="fa fa-github"
+          ></a>
+        </li>
+      </ul>
+    </section>
   </body>
 </html>
