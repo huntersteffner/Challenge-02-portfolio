@@ -1,0 +1,33 @@
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+}
+.portrait {
+    height: 75vh;
+    background-image: url(../images/Hunter-on-subway.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.title {
+    font-size: 2rem;
+    text-align: center;
+}
+/* About me */
+.sec-img img {
+    width: 100%;
+}
+
+/* Projects */
+
+.project-img img {
+    width: 100%;
+}
+.work-card {
+    position: relative;
+}
+.project-desc {
+    position: absolute;
+    top: 0;
+    color: #fff;
+}
