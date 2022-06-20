@@ -27,19 +27,14 @@ h2 {
     color: var(--title-color);
 }
 h3 {
-    /* h3 purposes does not have title color because of cards */
+    /* h3 purposefully does not have title color because of cards */
     font-size: 2rem;
     text-align: center;
     margin: 2rem;
-    /* color: var(--title-color); */
 }
 p {
     font-size: 1.5rem;
     margin: 1.3rem 2rem;
-    /* margin: 1rem 2rem; */
-}
-img {
-    /* display: block; */
 }
 
 /* Header */
@@ -48,16 +43,11 @@ header {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
-    /* position: relative; */
     justify-content: center;
     align-items: center;
 }
 .portrait {
-    /* height: 75vh; */
     overflow: hidden;
-    /* background-image: url(../images/Hunter-on-subway.jpg);
-    background-size: cover;
-    background-position: bottom; */
 }
 .portrait img {
     height: 75vh;
@@ -65,16 +55,15 @@ header {
     border-radius: 10px;
 }
 .title {
-    /* font-size: 2rem; */
     text-align: center;
     display: flex;
-    /* position: absolute; */
     width: 80%;
-    /* top: 50px; */
 }
 /* Navigation */
 
-/* Hamburger Toggle */
+/* Hamburger */
+
+/* Where the hamburger is located */
 label .menu {
     position: absolute;
   right: -50px;
@@ -91,6 +80,8 @@ label .menu {
 
 }
 
+
+/* Middle line of hamburger icon */
 label .hamburger {
     position: absolute;
     top: 135px;
@@ -105,6 +96,7 @@ label .hamburger {
     transition: .5s ease-in-out;
   }
 
+  /* Top and bottom lines of hamburger icon */
   label .hamburger:after, label .hamburger:before {
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
@@ -116,12 +108,15 @@ label .hamburger {
     background: var(--light-blue);
   }
 
+  /* Styling for hamburger line locations */
+
   label .hamburger:before { top: -10px; }
 
 label .hamburger:after { bottom: -10px; }
 
 label input { display: none; }
 
+/* Menu expansion when hamburger is clicked */
 label input:checked + .menu {
   box-shadow: 0 0 0 100vh var(--menu-color), 0 0  100vh var(--menu-color);
   border-radius: 0;
@@ -129,12 +124,14 @@ label input:checked + .menu {
   border-radius: 5px;
   
 }
+/* Hamburger rotation into X when it is clicked */
 
 label input:checked + .menu .hamburger {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   
 }
+/* More roations */
 
 label input:checked + .menu .hamburger:after {
   -webkit-transform: rotate(90deg);
@@ -150,8 +147,10 @@ label input:checked + .menu .hamburger:before {
   
 }
 
+/* Navigation options become visible */
 label input:checked + .menu + ul { opacity: 1;}
 
+/* Styling of nav bar */
 label ul {
   z-index: 200;
   position: absolute;
@@ -165,6 +164,7 @@ label ul {
   /* background-color: var(--menu-color); */
 }
 
+/* styling of links */
 label a {
   margin-bottom: 1em;
   display: block;
@@ -176,6 +176,8 @@ label a {
 label a:hover {
     color: #333;
 }
+
+/* Finish with hamburber */
 
 /* About me */
 .sec-img img {
@@ -204,6 +206,7 @@ label a:hover {
 .work-card img {
     border-radius: 10px;
     width: 100%;
+    border: var(--text-color) solid 2px;
 }
 .work-card {
     width: 45%;
@@ -215,6 +218,9 @@ label a:hover {
 
 .work-card h3 {
     font-size: 1.3rem;
+    background-color: var(--menu-color);
+    padding: 1rem;
+    border-radius: 5px;
 }
 .work-card p {
 font-size: .7rem;
